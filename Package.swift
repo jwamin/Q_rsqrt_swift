@@ -20,7 +20,7 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "Q_rsqrt_swift",
-            dependencies: ["Q_rsqrt_c"]),
+            dependencies: ["Q_rsqrt_C"]),
         .testTarget(
             name: "Qr-sqrt-swiftTests",
             dependencies: ["Q_rsqrt_swift"]),
