@@ -13,7 +13,7 @@ let package = Package(
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
-        .package(url: "Q_rsqrt_c", from: "0.0.1"),
+        .package(url: "./Q_rsqrt_c", from: "0.0.1"),
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -22,7 +22,7 @@ let package = Package(
             name: "Q_rsqrt_swift",
             dependencies: ["Q_rsqrt_c"]),
         .testTarget(
-            name: "Q_rsqrt_swiftTests",
+            name: "Qr-sqrt-swiftTests",
             dependencies: ["Q_rsqrt_swift"]),
     ]
 )
